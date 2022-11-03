@@ -1,0 +1,389 @@
+/* GENERAL CSS */
+html{
+    font-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative;
+}
+
+.section-intro {
+    margin-bottom: 40px;
+}
+
+.captionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* NAVBAR CSS */
+.navbar {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+
+}
+
+.dropdown-item:hover{
+    color: white;
+    background-color: black;
+}
+
+#subscribeNav{
+    background-color: black;
+    color: white !important;
+    border-radius: 20px;
+}
+
+
+/* CAROUSEL CSS */
+
+.carousel-indicators button.thumbnail{
+    width: 100px;
+}
+
+.carousel-indicators{
+    position: static;
+}
+
+.carousel .carousel-inner{
+    max-width: 100%;
+    min-height: 360px;
+}
+
+.carousel{
+    margin: 30px;
+}
+
+.carousel-item img{
+    min-height: 360px;
+    
+}
+
+
+.productContainer{
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px;
+    display: flex;
+    padding: 20px;
+
+}
+
+.inStock{
+    width: 80px;
+    font-size: 0.9rem;
+    padding:3px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+.supportDesc{
+    font-size: 0.8rem;
+}
+
+
+button{
+    font-weight: bold;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 30px;
+    background-color: gray;
+    color: black;
+    transition: all 0.6s ease;
+}
+
+
+button:hover{
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+/* BACKGROUND PHOTOS STYLE*/
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(5, 5, 5);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.video-container {
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video-container video {
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.cardContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    width: 200px;
+    border: none;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* SPECS SECTION CSS */
+.specsContainer{
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.specsData{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+/* FOOTER CSS */
+footer a{
+    color: white !important;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer a:hover{
+    color: rgb(0, 0, 0) !important;
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 50%; 
+    font-size: 1.2rem; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  }
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY FOR MOBILE DEVICES */
+@media screen and (max-width: 480px){
+    #navbarNav{
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: white;
+        font-size: 1.2rem;
+    }
+
+    #subscribeNav{
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .closeBtn{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+    .productContainer{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel{
+        width: 80vw;
+    }
+
+    .captionContainer{
+        width: 80vw;
+    }
+    
+
+
+    .linkProduct{
+        display: flex;
+        align-self: center;
+
+    }
+
+    .cardContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
+}
+
+
+
+
+
+
+/* MEDIA QUERY FOR IPADS/TABLETS */
+@media screen and (min-width: 481px) and (max-width:768px){
+    #navbarNav{
+        text-align: center;
+        background-color: white;
+    }
+
+    #subscribeNav{
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .closeBtn{
+        display: none;
+    }
+
+    .productContainer{
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel{
+        width: 80vw;
+    }
+
+    .captionContainer{
+        width: 80vw;
+    }
+
+    .carousel .carousel-inner{
+        max-width: 100%;
+        min-height: 460px;
+    }
+
+    .linkProduct{
+        display: flex;
+        align-self: center;
+    }
+
+    .cardContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+} 
+
+
+
+
+
+/* MEDIA QUERY FOR SMALL SCREEN AND LAPTOPS */
+@media screen and (min-width:769px) and (max-width:1024px) {
+    #navbarNav{
+        text-align: center;
+        background-color: white;
+    }
+
+    #subscribeNav{
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .closeBtn{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1400px) {
+    .carousel .carousel-inner{
+        max-width: 100%;
+        min-height: 460px;
+    }
+    
+    
+}
+
+
