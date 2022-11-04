@@ -63,11 +63,11 @@ section{
 }
 
 #home {
-    background-image: url(/website_images/landingimage.jpg);
+    background-image: url(./website_images/landingimage.jpg);
 }
 
 #paymentPlans{
-    background-image: url(/website_images/finance.jpg);
+    background-image: url(./website_images/finance.jpg);
 }
 
 h1{
