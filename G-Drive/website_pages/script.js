@@ -33,7 +33,6 @@
 
 
 
-
     // SCROLL TO TOP JS
     let mybutton = document.getElementById("topBtn");
 
@@ -54,6 +53,10 @@
       document.documentElement.scrollTop = 0; 
     }
 
+
+
+
+
     // DARK MODE JS
     const body = document.querySelector("body");
     const toggle = document.getElementById("toggleDark");
@@ -61,6 +64,10 @@
     toggle.classList.toggle('darkMode');
     body.classList.toggle('darkMode');
     }
+
+
+
+
 
 
     // SHOP NOW ALERT JS
@@ -84,6 +91,9 @@
         alert('Wala ka pang pera, mag-ipon ka muna!', 'dark')
       })
     } 
+
+    
+
 
     
     // CHATBOT JS

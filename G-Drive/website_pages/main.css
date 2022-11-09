@@ -65,6 +65,10 @@ section{
 
 
 /* LANDING PAGE CSS */
+.mainHead{
+    font-weight: 900;
+}
+
 .picture-section{
     min-height: 100vh;
     display: flex;
@@ -97,7 +101,8 @@ h1{
 }
 
 .navChange{
-    background-color: white;
+    background-color:rgb(153, 147, 147);
+    opacity: 0.9;
 }
 
 .navbar-brand{
@@ -131,8 +136,8 @@ h1{
 }
 
 #subscribeNav{
-    background-color: black;
-    color: white;
+    background-color: rgb(104, 169, 245);
+    color: black;
     border-radius: 20px;
 }
 
@@ -145,6 +150,7 @@ h1{
     font-size: 1.5rem;
     margin-left: 20px;
     cursor: pointer;
+    color: white;
 }
 
 body.darkMode{
@@ -163,27 +169,30 @@ body.darkMode{
 /* BUTTONS */
 .btn-main{
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.74);
-    color: rgb(0, 0, 0);
+    background-color: rgb(104, 169, 245);
+    opacity: 1;
+    color: black;
     padding: 10px 20px;
-    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 500;
     border-radius: 10px;
     font-size: 1.2rem;
     transition: all 0.6s ease;
 }
 
 .btn-main:hover{
-    color: rgb(255, 255, 255);
-    background-color: black;
+    color: black;
     transform: scale(1.1);
 }
 
 .linkProduct{
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    color: black;
+    background-color: rgb(104, 169, 245);
     text-decoration: none;
-    font-weight: 700;
-    width: 150px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 180px;
     border-radius: 10px;
     text-align: center;
     transition: all 0.6s ease;
@@ -191,15 +200,16 @@ body.darkMode{
 
 .linkProduct:hover{
     padding: 8px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(134, 127, 127);
-    transform: translateY(-1px);
+    color: black;
+    transform: scale(1.1);
 }
 
 
 #viewMore{
-    background-color: rgb(156, 155, 155);
-    color: rgb(12, 12, 12);
+    background-color: rgb(104, 169, 245);
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
     border-radius: 10px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -207,8 +217,8 @@ body.darkMode{
     transition: all 0.6s ease;
 }
 #viewMore:hover{
-    background-color: black;
-    color: white;   
+    color: black;
+    transform: scale(1.1);
 }
 
 .iconSmall{
@@ -218,7 +228,6 @@ body.darkMode{
 .iconBig{
     font-size: 10rem;
 }
-
 
 
 
@@ -296,17 +305,20 @@ body.darkMode{
 
 #subscribeBtn{
     margin: 20px auto;
+    width: 160px;
     padding: 5px;
     border-radius: 10px;
     border: none;
+    text-transform: uppercase;
     font-weight: 500;
     font-size: 1.3rem;
-    background-color: gray;
+    background-color: rgb(104, 169, 245);
     transition: all 0.6s ease;
 }
 
 #subscribeBtn:hover{
-    color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.1);
 }
 
 
@@ -332,16 +344,17 @@ footer a:hover{
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(104, 169, 245); 
     color: white; 
     cursor: pointer; 
     padding: 15px; 
-    border-radius: 50%; 
-    font-size: 1.2rem; 
+    border-radius: 40%; 
+    font-size: 1.7rem; 
   }
   
   #topBtn:hover {
-    background-color: #555; 
+    opacity: 0.7;
+
   }
 
 
